@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akinwunmi Ibrahim|Portfolio</title>
+    <link rel="icon" href="img/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cda49d916e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" onclick="closeMobile()">Home</a>
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#services" onclick="closeMobile()">Services</a>
+      <a href="#portfolio" onclick="closeMobile()">Work</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">
+        <img src="img/my-logo.png" alt="Ibrahim Akinwunmi Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact" class="nav-cta">Hire me</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge"><span></span> Available for work</div>
+            <h1 class="hero-title">
+              Ibrahim<br />
+              <span class="line2">Akinwunmi</span><br />
+              <span class="line3">Web Application Developer</span>
+            </h1>
+            <p class="hero-desc">
+              I build robust, scalable web applications — from dynamic
+              front-ends to Python-powered back-ends. Based in Nigeria,
+              delivering quality software for the world.
+            </p>
+            <div class="hero-btns">
+              <a href="#portfolio" class="btn-primary">
+                <i class="fa-solid fa-eye"></i> View my work
+              </a>
+              <a href="#contact" class="btn-outline">Let's talk</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <div class="stat-num">1+</div>
+                <div class="stat-label">Years experience</div>
+              </div>
+              <div>
+                <div class="stat-num">5+</div>
+                <div class="stat-label">Projects delivered</div>
+              </div>
+              <div>
+                <div class="stat-num">100%</div>
+                <div class="stat-label">Dedication</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-blob"></div>
+            <div class="hero-img-frame">
+              <img src="img/pics1.png" alt="Ibrahim Akinwunmi" />
+            </div>
+            <div class="floating-card card1">
+              <div class="fc-label">Status</div>
+              <div class="fc-val">
+                <span class="fc-dot"></span>Open to projects
+              </div>
+            </div>
+            <div class="floating-card card2">
+              <div class="fc-label">Based in</div>
+              <div class="fc-val">&#127462;&#127475; Nigeria</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-img fade-up">
+            <img src="img/pic2.jpg" alt="Ibrahim Akinwunmi" />
+          </div>
+          <div class="about-content">
+            <div class="section-tag fade-up">About me</div>
+            <h2 class="section-title fade-up">
+              Building applications<br />that solve real problems
+            </h2>
+            <p class="fade-up">
+              I'm Ibrahim Akinwunmi, a Web Application Developer from Nigeria. I
+              graduated with a B.Sc. in Computer Science from Crescent
+              University, Abeokuta, and I'm currently advancing my skills
+              through a Smart Web Application Development with Python programme
+              at Aptech Computer Education. I'm passionate about writing clean,
+              efficient code and building full-featured web applications.
+            </p>
+
+            <div class="tab-nav fade-up">
+              <button class="tab-btn active" onclick="switchTab('skills')">
+                Skills
+              </button>
+              <button class="tab-btn" onclick="switchTab('experience')">
+                Experience
+              </button>
+              <button class="tab-btn" onclick="switchTab('education')">
+                Education
+              </button>
+            </div>
+
+            <div class="tab-panel active" id="tab-skills">
+              <div class="skills-section">
+                <div class="skill-item">
+                  <div class="skill-top">
+                    <span>HTML &amp; CSS</span><span>90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" data-width="90"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-top">
+                    <span>JavaScript</span><span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" data-width="70"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-top">
+                    <span>Python</span><span>65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" data-width="65"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-top">
+                    <span>Responsive &amp; UI Development</span><span>85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-fill" data-width="85"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="tab-experience">
+              <ul>
+                <li>
+                  <div class="item-top">2022 – Present</div>
+                  <div class="item-desc">
+                    Freelance Web Application Developer — building and deploying
+                    web applications including front-end interfaces and
+                    server-side features.
+                  </div>
+                </li>
+                <li>
+                  <div class="item-top">2021 – 2022</div>
+                  <div class="item-desc">
+                    Developed and hosted multiple web projects on Netlify,
+                    including a fully custom construction web application and a
+                    personal portfolio.
+                  </div>
+                </li>
+                <li>
+                  <div class="item-top">2021</div>
+                  <div class="item-desc">
+                    Completed web development training at Aptech Computer
+                    Education, gaining hands-on experience in building
+                    structured web applications.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-panel" id="tab-education">
+              <ul>
+                <li>
+                  <div class="item-top">2020 – 2024</div>
+                  <div class="item-desc">
+                    B.Sc. Computer Science — Crescent University, Abeokuta
+                    (Graduate)
+                  </div>
+                </li>
+                <li>
+                  <div class="item-top">Ongoing</div>
+                  <div class="item-desc">
+                    Smart Web Application Development with Python — Aptech
+                    Computer Education
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-tag fade-up">What I do</div>
+        <h2 class="section-title fade-up">My Services</h2>
+        <div class="services-grid">
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3>Full-Stack Web Development</h3>
+            <p>
+              End-to-end development of web applications — from interactive
+              front-end interfaces to server-side logic using Python, ensuring a
+              seamless user experience across the stack.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-icon">
+              <i class="fa-solid fa-mobile-screen"></i>
+            </div>
+            <h3>Responsive Application Interfaces</h3>
+            <p>
+              Building fluid, pixel-perfect interfaces that adapt to any screen
+              size — ensuring your application delivers a consistent,
+              professional experience on desktop, tablet, and mobile.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Python Web Application Development</h3>
+            <p>
+              Developing dynamic, data-driven web applications with Python —
+              including form handling, database integration, and server-side
+              rendering using modern web frameworks.
+            </p>
+          </div>
+          <div class="service-card fade-up">
+            <div class="service-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Deployment &amp; Hosting</h3>
+            <p>
+              Taking your application from local to live — configuring and
+              deploying web applications on cloud platforms, ensuring reliable
+              performance, uptime, and scalability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-tag fade-up">My work</div>
+        <h2 class="section-title fade-up">Recent Projects</h2>
+
+        <div class="portfolio-filter fade-up">
+          <button class="filter-btn active" onclick="filterWork('all', this)">
+            All
+          </button>
+          <button class="filter-btn" onclick="filterWork('webapp', this)">
+            Web Application
+          </button>
+          <button class="filter-btn" onclick="filterWork('construction', this)">
+            Construction
+          </button>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- OMNIFOOD -->
+          <div class="project-card fade-up" data-cat="webapp">
+            <img src="img/omnifood.png" alt="Omnifood" class="project-thumb" />
+            <div class="project-info">
+              <div class="project-tag">Web Application · Nutrition Tech</div>
+              <h3>Omnifood Web App</h3>
+              <p>
+                A smart food subscription web application with meal plan
+                selection, dietary filtering, and a clean subscription flow
+                built with modern web technologies.
+              </p>
+              <a
+                href="https://sak-ice.github.io/Ibrahim-Omnifood/"
+                class="project-link"
+                >View project <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- PIZZA HUT-->
+          <div class="project-card fade-up" data-cat="webapp">
+            <img
+              src="img/pizzahut.png"
+              alt="Pizza Hut Web App"
+              class="project-thumb"
+            />
+            <div class="project-info">
+              <div class="project-tag">
+                Web Application · Food &amp; Ordering
+              </div>
+              <h3>Pizza Hut Web App</h3>
+              <p>
+                A fully functional food ordering web application featuring a
+                dynamic menu, cart system, and order management interface.
+              </p>
+              <a
+                href="https://sak-ice.github.io/Pizza-hut/"
+                class="project-link"
+                >View project <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <!-- MARAMIN -->
+          <div class="project-card fade-up" data-cat="construction">
+            <img src="img/maramin.png" alt="Maramin" class="project-thumb" />
+            <div class="project-info">
+              <div class="project-tag">Web Application · Construction</div>
+              <h3>Maramin Construction</h3>
+              <p>
+                A professional construction company web application featuring
+                project showcases, service listings, and a client enquiry
+                system. Live on Netlify.
+              </p>
+              <a
+                href="https://ibrahim-maramin.netlify.app/"
+                target="_blank"
+                class="project-link"
+                >View live <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <div class="section-tag fade-up">Get in touch</div>
+            <div class="contact-info fade-up">
+              <h2>Let's work<br />together</h2>
+              <p>
+                Have a project in mind or just want to say hello? Fill out the
+                form or reach me directly.
+              </p>
+            </div>
+            <div class="fade-up">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <a href="mailto:akinwunmiibrahim01@gmail.com"
+                  >akinwunmiibrahim01@gmail.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <a href="tel:+2349020059397">+234 902 005 9397</a>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span style="color: var(--muted); font-size: 0.9rem"
+                  >Nigeria &#127462;&#127475;</span
+                >
+              </div>
+            </div>
+            <div class="social-row fade-up">
+              <a href="https://github.com/sak-ice" class="social-link"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/akinwunmi-ibrahim-atanda"
+                target="_blank"
+                class="social-link"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://wa.me/2349020059397"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <div style="margin-top: 2rem" class="fade-up">
+              <a
+                href="img/Akinwunmi-ibrahim-cv.pdf"
+                download
+                class="btn-primary"
+                style="width: fit-content"
+              >
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form fade-up">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First name</label>
+                <input type="text" id="fname" placeholder="John" />
+              </div>
+              <div class="form-group">
+                <label>Last name</label>
+                <input type="text" id="lname" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email address</label>
+              <input type="email" id="femail" placeholder="john@example.com" />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" id="fsubject" placeholder="Project enquiry" />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                id="fmessage"
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+            <button class="btn-submit" onclick="handleSubmit()">
+              <i class="fa-solid fa-paper-plane"></i> Send message
+            </button>
+            <p class="form-msg" id="formMsg"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <span>&copy; 2026 Ibrahim Akinwunmi. All rights reserved.</span>
+      <span
+        >Made with
+        <i class="fa-solid fa-heart" style="color: var(--accent)"></i> in
+        Nigeria</span
+      >
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button
+      id="back-top"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
